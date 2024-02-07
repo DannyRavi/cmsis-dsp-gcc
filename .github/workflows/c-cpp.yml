@@ -16,7 +16,13 @@ jobs:
     - name: make build
       working-directory: ./arm_matrix_example
       run: make build
-    - name: make run
+    - name: make run matrix
       working-directory: ./arm_matrix_example
+      run: make run
+    - name: make build FIR
+      working-directory: ./arm_fir_example
+      run: make build
+    - name: make run FIR
+      working-directory: ./arm_fir_example
       run: make run
 
