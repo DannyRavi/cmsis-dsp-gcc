@@ -229,6 +229,7 @@ int32_t main(void)
   for(i=0; i < numBlocks; i++)
   {
     arm_fir_f32(&S, inputF32 + (i * blockSize), outputF32 + (i * blockSize), blockSize);
+    printf("result  fir is = %f \n ", (double)*(outputF32 + (i * blockSize)));
   }
 
   /* ----------------------------------------------------------------------
