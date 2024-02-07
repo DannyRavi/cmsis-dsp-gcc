@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------
  * Copyright (C) 2010-2012 ARM Limited. All rights reserved.
  *
- * $Date:         17. January 2013
+ * $Date:         17. January 2014
  * $Revision:     V1.4.0
  *
  * Project:       CMSIS DSP Library
@@ -10,7 +10,7 @@
  * Description:   Example code demonstrating least square fit to data
  *                using matrix functions
  *
- * Target Processor: Cortex-M4/Cortex-M3
+ * Target Processor: x86
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions

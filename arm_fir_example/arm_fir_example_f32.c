@@ -123,7 +123,7 @@
 #include "../dsp/arm_math.h"
 #include "../dsp/math_helper.h"
 
-
+#define SEMIHOSTING 1
 #if defined(SEMIHOSTING)
 #include <stdio.h>
 #endif
