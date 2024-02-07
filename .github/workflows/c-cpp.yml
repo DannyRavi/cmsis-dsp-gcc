@@ -14,7 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make build
+      working-directory: ./arm_matrix_example
       run: make build
     - name: make run
+      working-directory: ./arm_matrix_example
       run: make run
 
