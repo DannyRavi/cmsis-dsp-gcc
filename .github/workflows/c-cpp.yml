@@ -19,6 +19,8 @@ jobs:
     - name: make run matrix
       working-directory: ./arm_matrix_example
       run: make run
+
+
     - name: make build FIR
       working-directory: ./arm_fir_example
       run: make build
@@ -26,3 +28,10 @@ jobs:
       working-directory: ./arm_fir_example
       run: make run
 
+      
+    - name: make build linear_interp
+      working-directory: ./arm_linear_interp_example
+      run: make build
+    - name: make run linear_interp
+      working-directory: ./arm_linear_interp_example
+      run: make run

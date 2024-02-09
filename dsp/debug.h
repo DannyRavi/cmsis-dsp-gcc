@@ -34,7 +34,7 @@
 #include "utils.h"
 
 #include "matrix_functions.h"
-#include "matrix_functions_f16.h"
+// #include "matrix_functions_f16.h"
 
 #include <stdio.h>
 
