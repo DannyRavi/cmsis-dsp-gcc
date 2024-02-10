@@ -26,8 +26,28 @@ this image:
 
 it is to similar scipy FIR and cmsis-dsp wrapper output in the notebook file
 
-![ARM_CMSIS_DSP_FIR_python](/assets/FIR_output_py.png.png "ARM CMSIS DSP FIR python")
+![ARM_CMSIS_DSP_FIR_python](/assets/FIR_output_py.png "ARM CMSIS DSP FIR python")
 
+finally we can check bot mean and variance on jupyter notebook and c++
+
+for python notebook:
+
+```sh
+sin noisy mean:  0.0
+sin noisy var:  0.51948
+fir mean:  0.010776961394674657
+fir var:  0.465838732679487
+```
+
+for C++
+
+```sh
+Mean SIN: -0.00129333
+Variance SIN: 0.520287
+Mean FIR: 0.0116191
+Variance FIR: 0.460044
+
+```
 
 
 
