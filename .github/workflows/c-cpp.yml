@@ -29,9 +29,16 @@ jobs:
       run: make run
 
       
-    - name: make build linear_interp
+    - name: make build linear_interp  
       working-directory: ./arm_linear_interp_example
       run: make build
     - name: make run linear_interp
       working-directory: ./arm_linear_interp_example
+      run: make run
+
+    - name: make build fir in practice
+      working-directory: ./gcc_fir_gnuplot
+      run: make build
+    - name: make run fir in practice
+      working-directory: ./gcc_fir_gnuplot
       run: make run
