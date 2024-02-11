@@ -13,32 +13,39 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make build
+    - name:  build
       working-directory: ./arm_matrix_example
       run: make build
-    - name: make run matrix
+    - name:  run matrix
       working-directory: ./arm_matrix_example
       run: make run
 
 
-    - name: make build FIR
+    - name:  build FIR
       working-directory: ./arm_fir_example
       run: make build
-    - name: make run FIR
+    - name:  run FIR
       working-directory: ./arm_fir_example
       run: make run
 
       
-    - name: make build linear_interp  
+    - name:  build linear_interp  
       working-directory: ./arm_linear_interp_example
       run: make build
-    - name: make run linear_interp
+    - name:  run linear_interp
       working-directory: ./arm_linear_interp_example
       run: make run
 
-    - name: make build fir in practice
+    - name:  build fir in practice
       working-directory: ./gcc_fir_gnuplot
       run: make build
-    - name: make run fir in practice
+    - name:  run fir in practice
       working-directory: ./gcc_fir_gnuplot
+      run: make run
+
+    - name:  build trig
+      working-directory: ./arm_sin_cos_example
+      run: make build
+    - name:  run fir in trig
+      working-directory: ./arm_sin_cos_example
       run: make run
