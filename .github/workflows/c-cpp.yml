@@ -49,3 +49,11 @@ jobs:
     - name:  run fir in trig
       working-directory: ./arm_sin_cos_example
       run: make run
+
+
+    - name:  build FFT
+      working-directory: ./arm_fft_bin_example
+      run: make build
+    - name:  run FFT
+      working-directory: ./arm_fft_bin_example
+      run: make run
